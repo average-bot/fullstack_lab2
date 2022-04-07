@@ -13,11 +13,11 @@ mongoose.connect(process.env.DB_URL, { useUnifiedTopology: true, useNewUrlParser
     console.log('connected to db');
 });
 
-//const api = require('./routes/api')
+const api = require('./routes/api')
 
 // Route Middleware
-//app.use('/api', api);
-app.use(express.static('./dist/'));
+app.use('/api', api);
+app.use(express.static('../../dist/'));
 
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)

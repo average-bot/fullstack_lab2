@@ -11,7 +11,7 @@ const studentSchema = mongoose.Schema({
     email: {
         type: String
     },
-    hashed_password: {
+    password: {
         type: String
     }
 });
