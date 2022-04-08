@@ -11,6 +11,16 @@ const container = document.getElementById("index")
 const root = createRoot(container);
 root.render(element)
 
-var courses = retriever.getData("courses");
-console.log(courses);
-//console.log(courses[0]);
+retriever.getData("courses");
+let courses = JSON.parse(localStorage.getItem("courses"));
+
+retriever.getData("students");
+let students = JSON.parse(localStorage.getItem("students"));
+
+retriever.getData("registrations");
+let registrations = JSON.parse(localStorage.getItem("registrations"));
+
+
+console.log(courses[1].course_code);
+console.log(students[1].unit_id);
+console.log(registrations[1].course_code);

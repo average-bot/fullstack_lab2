@@ -10,7 +10,12 @@ function getData(collection) {
             if (response.message) {
                 console.log("The collection could not be retrieved.");
             } else {
-                console.log(response);
+                localStorage.setItem(collection, JSON.stringify(response));
+                /*
+                response.forEach(element => {
+                    console.log(element);
+                });
+                */
             }
         });
 }
