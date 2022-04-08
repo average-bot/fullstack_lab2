@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import fetcher from "./fetcher";
+import retriever from "./retriever";
 
 //alert("hello");
 function Welcome(props) {
@@ -11,8 +11,6 @@ const container = document.getElementById("index")
 const root = createRoot(container);
 root.render(element)
 
-fetcher.showInfo();
-
-
-/*<script src="index.js"></script>
-<script src="fetcher.js"></script> */
+var courses = retriever.getData("courses");
+console.log(courses);
+//console.log(courses[0]);
