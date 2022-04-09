@@ -5,7 +5,7 @@ const Course = require('../model/Course');
 const Student = require('../model/Student');
 const Registration = require('../model/Registration');
 
-// localhost:3000/courses 
+// localhost:3000/courses
 router.get('/courses', async (req, res) => {
     try {
         const courses = await Course.find();
@@ -23,7 +23,7 @@ router.get('/students', async (req, res) => {
     try {
         //collection = db.getCollection("Student");
         const students = await Student.find();
-        console.log(students);
+        //console.log(students);
         if (!students) {
             throw new Error("No students exist");
         }
