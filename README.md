@@ -11,5 +11,5 @@ After that the application and the express server can be run with:
 npm run concurrent
 ```
 This will open your browser at localhost:8080
-Hope you enjoy 💚 💚 💚
+Hope you enjoy :hibiscus: :cherry_blossom: 	:bouquet:
 <p><img src="src/flowers.jpg" alt="flowa" title="https://www.vecteezy.com/vector-art/5204231-watercolor-rose-flower-floral-seamless-pattern" /></p>
