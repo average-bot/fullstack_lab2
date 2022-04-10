@@ -5,14 +5,17 @@ import React from 'react';
 import dataArr from "..";
 
 const Table = () => {
+    // Set the state of the table to be the array of data
     const [tableData, setTableData] = useState(dataArr);
 
+    // columns with corresponding names from data array of objects
     const columns = [
         { label: "Student id", accessor: "student_id", sortable: true },
         { label: "Student name", accessor: "student_name", sortable: true },
         { label: "Course code", accessor: "course_code", sortable: true },
         { label: "Reg date", accessor: "reg_time", sortable: true },
     ];
+    // sorting algorithm
     const handleSorting = (sortField, sortOrder) => {
         if (sortField) {
             const sorted = [...tableData].sort((a, b) => {
@@ -25,6 +28,7 @@ const Table = () => {
             setTableData(sorted);
         }
     };
+    // return the headers and (sorted) table elements as a table
     return (
         <>
             <table className="table">

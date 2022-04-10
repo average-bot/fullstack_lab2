@@ -1,5 +1,6 @@
 import React from 'react';
 import Table from "./components/Table";
+import "./style.css"
 
 
 // with the help of https://blog.logrocket.com/creating-react-sortable-table/

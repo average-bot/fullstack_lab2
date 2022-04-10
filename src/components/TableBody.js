@@ -1,6 +1,9 @@
 import React from 'react';
+import "./../style.css"
+
+// creating the data part of the table
 const TableBody = ({ tableData, columns }) => {
-    return (
+    return ( // mapping the sorted data body to the right columns and displaying it
         <tbody>
             {tableData.map((data) => {
                 return (
