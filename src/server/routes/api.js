@@ -54,6 +54,7 @@ router.get("/students/:id", async (req, res) => {
 router.get('/registrations', async (req, res) => {
     try {
         const registrations = await Registration.find();
+
         if (!registrations) {
             throw new Error("No courses exist");
         }

@@ -2,12 +2,10 @@ import { useState } from "react";
 import TableBody from "./TableBody";
 import TableHead from "./TableHead";
 import React from 'react';
-import dataArr from "..";
 
-const Table = () => {
+function table(data) {
     // Set the state of the table to be the array of data
-    const [tableData, setTableData] = useState(dataArr);
-
+    var [tableData, setTableData] = useState(data.data);
     // columns with corresponding names from data array of objects
     const columns = [
         { label: "Student id", accessor: "student_id", sortable: true },
@@ -40,4 +38,4 @@ const Table = () => {
     );
 };
 
-export default Table;
+export default table;

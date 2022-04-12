@@ -5,12 +5,13 @@ import "./style.css"
 
 // with the help of https://blog.logrocket.com/creating-react-sortable-table/
 
-const App = () => {
+function app(data) {
+    //console.log(data.data);
     return (
         <div className="table_container">
-            <Table />
+            <Table data={data.data} />
         </div>
     );
 };
 
-export default App;
+export default app;

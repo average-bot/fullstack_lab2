@@ -2,7 +2,7 @@ import React from 'react';
 import "./../style.css"
 
 // creating the data part of the table
-const TableBody = ({ tableData, columns }) => {
+function tableBody({ tableData, columns }) {
     return ( // mapping the sorted data body to the right columns and displaying it
         <tbody>
             {tableData.map((data) => {
@@ -17,6 +17,6 @@ const TableBody = ({ tableData, columns }) => {
             })}
         </tbody>
     );
-};
+}
 
-export default TableBody;
+export default tableBody;
