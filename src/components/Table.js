@@ -10,7 +10,7 @@ function table(data) {
     const columns = [
         { label: "Student id", accessor: "student_id", sortable: true },
         { label: "Student name", accessor: "student_name", sortable: true },
-        { label: "Course code", accessor: "course_code", sortable: true },
+        { label: "Course name", accessor: "course_name", sortable: true },
         { label: "Reg date", accessor: "reg_time", sortable: true },
     ];
     // sorting algorithm

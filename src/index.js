@@ -45,10 +45,9 @@ function buildTable(theRoot) {
                                 id: reg._id,
                                 student_id: student.unit_id,
                                 student_name: student.full_name,
-                                course_code: course.course_code,
+                                course_name: course.course_name,
                                 reg_time: reg.unix_timestamp
-                            }
-                        );
+                            });
                     }
                 })
             }
